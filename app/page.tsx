@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   Briefcase,
   GraduationCap,
@@ -53,6 +54,53 @@ function Navbar() {
   );
 }
 
+function ProfilePhoto() {
+  return (
+    <div className="relative w-[280px] h-[280px] md:w-[340px] md:h-[340px] mx-auto shrink-0">
+      {/* Gradient ring — matching LinkedIn Profilbild from .pen */}
+      <div
+        className="absolute inset-0 rounded-full"
+        style={{
+          background:
+            "conic-gradient(from 180deg, rgba(163,230,53,0.44), rgba(163,230,53,0.12) 40%, rgba(163,230,53,0.44))",
+          padding: 3,
+          WebkitMask: "radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px))",
+          mask: "radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 3px))",
+        }}
+      />
+      {/* Photo container */}
+      <div className="absolute inset-[6px] rounded-full overflow-hidden bg-light">
+        <Image
+          src="/profile.jpg"
+          alt="Sebastian Pieper"
+          fill
+          className="object-cover object-top"
+          sizes="(max-width: 768px) 280px, 340px"
+          priority
+        />
+        {/* Radial vignette overlay */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse at 50% 42%, transparent 52%, rgba(248,250,252,0.09) 63%, rgba(248,250,252,0.31) 73%, rgba(248,250,252,0.63) 83%, rgba(248,250,252,0.87) 93%, rgba(248,250,252,0.96) 100%)",
+          }}
+        />
+      </div>
+      {/* Decorative floating squares around the photo */}
+      <div className="absolute -bottom-2 left-[18%] w-[48px] h-[48px] bg-[#A3E635] opacity-90 rounded-[10px] rotate-[18deg] shadow-[0_4px_30px_rgba(163,230,53,0.3)]" />
+      <div className="absolute -bottom-1 right-[16%] w-[44px] h-[44px] bg-[#84CC16] opacity-90 rounded-[8px] rotate-[-15deg] shadow-[0_4px_25px_rgba(132,204,22,0.25)]" />
+      <div className="absolute bottom-[8%] left-[5%] w-[30px] h-[30px] bg-[#BEF264] opacity-65 rounded-[5px] rotate-[30deg]" />
+      <div className="absolute top-[35%] right-[-6%] w-[34px] h-[34px] bg-[#4ADE80] opacity-70 rounded-[6px] rotate-[-25deg]" />
+      <div className="absolute top-[30%] left-[-4%] w-[26px] h-[26px] bg-[#65A30D] opacity-75 rounded-[5px] rotate-[22deg]" />
+      <div className="absolute -bottom-3 left-[42%] w-[34px] h-[34px] bg-[#BEF264] opacity-80 rounded-[6px] rotate-[25deg]" />
+      {/* Glass square */}
+      <div className="absolute bottom-[20%] right-[-3%] w-[50px] h-[50px] bg-[rgba(255,255,255,0.5)] rounded-[10px] rotate-[8deg] border border-[rgba(255,255,255,0.7)] backdrop-blur-[10px]" />
+      <div className="absolute top-[15%] left-[-2%] w-[40px] h-[40px] bg-[rgba(255,255,255,0.5)] rounded-[8px] rotate-[-12deg] border border-[rgba(255,255,255,0.7)] backdrop-blur-[8px]" />
+    </div>
+  );
+}
+
 function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-light via-light2 to-light">
@@ -71,40 +119,48 @@ function Hero() {
         <div className="absolute top-[30%] right-[10%] w-[220px] h-[180px] bg-[#65A30D15] rounded-full blur-[55px]" />
       </div>
 
-      <div className="relative z-10 max-w-[820px] mx-auto px-6 text-center">
-        <p className="animate-fade-up font-heading text-[26px] font-bold tracking-[2px] text-accent2 mb-4">
-          with Product &amp; People in mind
-        </p>
-        <h1 className="animate-fade-up delay-100 font-heading text-5xl md:text-[68px] font-extrabold text-black leading-[1.1] tracking-[-1px] mb-5">
-          Building what&apos;s next
-        </h1>
-        <div className="animate-fade-up delay-200 w-20 h-1 bg-accent mx-auto rounded-sm mb-6" />
-        <div className="animate-fade-up delay-300 flex items-center justify-center gap-4 flex-wrap">
-          <span className="font-body text-2xl font-bold text-text2 tracking-[0.5px]">
-            AI
-          </span>
-          <span className="text-[28px] text-[rgba(15,23,42,0.15)]">·</span>
-          <span className="font-body text-2xl font-bold text-text2 tracking-[0.5px]">
-            Agile Product Delivery
-          </span>
-          <span className="text-[28px] text-[rgba(15,23,42,0.15)]">·</span>
-          <span className="font-body text-2xl font-bold text-text2 tracking-[0.5px]">
-            Leadership
-          </span>
+      <div className="relative z-10 max-w-[1100px] mx-auto px-6 flex flex-col md:flex-row items-center gap-12 md:gap-20">
+        {/* Profile Photo */}
+        <div className="animate-fade-up">
+          <ProfilePhoto />
         </div>
-        <div className="animate-fade-up delay-400 mt-10 flex items-center justify-center gap-4">
-          <a
-            href="#experience"
-            className="font-heading text-sm font-bold bg-accent text-black px-7 py-3 rounded-lg hover:bg-accent-hover hover:shadow-[0_4px_30px_rgba(163,230,53,0.4)] transition-all"
-          >
-            Erfahrung ansehen
-          </a>
-          <a
-            href="#contact"
-            className="font-heading text-sm font-semibold text-text2 bg-pill-bg border border-accent-border px-7 py-3 rounded-lg hover:bg-[rgba(15,23,42,0.08)] hover:border-accent-border2 transition-all"
-          >
-            Kontakt
-          </a>
+
+        {/* Text content */}
+        <div className="text-center md:text-left">
+          <p className="animate-fade-up delay-100 font-heading text-[22px] md:text-[26px] font-bold tracking-[2px] text-accent2 mb-4">
+            with Product &amp; People in mind
+          </p>
+          <h1 className="animate-fade-up delay-200 font-heading text-5xl md:text-[68px] font-extrabold text-black leading-[1.1] tracking-[-1px] mb-5">
+            Building what&apos;s next
+          </h1>
+          <div className="animate-fade-up delay-300 w-20 h-1 bg-accent rounded-sm mb-6 mx-auto md:mx-0" />
+          <div className="animate-fade-up delay-400 flex items-center justify-center md:justify-start gap-4 flex-wrap">
+            <span className="font-body text-xl md:text-2xl font-bold text-text2 tracking-[0.5px]">
+              AI
+            </span>
+            <span className="text-[28px] text-[rgba(15,23,42,0.15)]">·</span>
+            <span className="font-body text-xl md:text-2xl font-bold text-text2 tracking-[0.5px]">
+              Agile Product Delivery
+            </span>
+            <span className="text-[28px] text-[rgba(15,23,42,0.15)]">·</span>
+            <span className="font-body text-xl md:text-2xl font-bold text-text2 tracking-[0.5px]">
+              Leadership
+            </span>
+          </div>
+          <div className="animate-fade-up delay-500 mt-10 flex items-center justify-center md:justify-start gap-4">
+            <a
+              href="#experience"
+              className="font-heading text-sm font-bold bg-accent text-black px-7 py-3 rounded-lg hover:bg-accent-hover hover:shadow-[0_4px_30px_rgba(163,230,53,0.4)] transition-all"
+            >
+              Erfahrung ansehen
+            </a>
+            <a
+              href="#contact"
+              className="font-heading text-sm font-semibold text-text2 bg-pill-bg border border-accent-border px-7 py-3 rounded-lg hover:bg-[rgba(15,23,42,0.08)] hover:border-accent-border2 transition-all"
+            >
+              Kontakt
+            </a>
+          </div>
         </div>
       </div>
 
