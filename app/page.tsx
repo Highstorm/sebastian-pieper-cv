@@ -10,7 +10,6 @@ import {
   BarChart3,
   FileText,
   Mail,
-  Phone,
   MapPin,
   ChevronRight,
   Globe,
@@ -542,14 +541,7 @@ function Contact() {
             <span className="font-body text-sm text-black font-medium">seb@stianpieper.de</span>
           </a>
           <a
-            href="tel:+4915140513049"
-            className="flex items-center gap-3 bg-card-bg border border-accent-border rounded-[20px] px-8 py-5 hover:bg-[rgba(15,23,42,0.06)] hover:border-accent-border2 hover:-translate-y-0.5 transition-all duration-300"
-          >
-            <Phone className="w-5 h-5 text-accent2" strokeWidth={1.5} />
-            <span className="font-body text-sm text-black font-medium">+49 151 405 130 49</span>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/sebastianpieper/"
+            href="https://www.linkedin.com/in/sebastian-pieper-selb/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 bg-card-bg border border-accent-border rounded-[20px] px-8 py-5 hover:bg-[rgba(15,23,42,0.06)] hover:border-accent-border2 hover:-translate-y-0.5 transition-all duration-300"
