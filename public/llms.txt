@@ -1,0 +1,62 @@
+# Sebastian Pieper
+
+> Senior IT professional with 15+ years of experience in IT strategy, digital transformation, and AI implementation. Based in Selb, Germany.
+
+## About
+
+Sebastian Pieper is a seasoned IT leader specializing in AI strategy, digital transformation, and enterprise IT management. He combines deep technical expertise with business acumen to help organizations leverage technology effectively. He holds certifications including ITIL 4 Foundation, PSM I, and SAFe Agilist, and has led teams of 50+ across international operations.
+
+## Expertise
+
+- AI Strategy & Implementation
+- Digital Transformation
+- IT Service Management (ITIL)
+- Agile & SAFe Methodologies
+- Enterprise Architecture
+- Team Leadership & Scaling
+- Cloud Infrastructure (Azure, AWS)
+- Data Analytics & BI
+- GDPR Compliance & IT Governance
+- Process Automation
+
+## Current Role
+
+Head of IT at RAPA Automotive — leading IT strategy, digital transformation initiatives, and AI integration for a global automotive supplier.
+
+## Professional Background
+
+- Head of IT, RAPA Automotive (2022–present)
+- IT Manager, RAPA Automotive (2019–2022)
+- IT Administrator, RAPA Automotive (2011–2019)
+
+## Education
+
+- B.Sc. Computer Science — Hochschule Hof
+- IT Specialist (Fachinformatiker Systemintegration) — IHK
+
+## Certifications
+
+- ITIL 4 Foundation
+- Professional Scrum Master I (PSM I)
+- SAFe 6 Agilist
+- Multiple Microsoft & Salesforce certifications
+
+## Languages
+
+- German (native)
+- English (fluent)
+
+## Links
+
+- Website: https://sebastian-pieper.vercel.app
+- AI Consulting: https://ki-beratung.vercel.app
+- LinkedIn: https://www.linkedin.com/in/sebastian-pieper-selb/
+- Email: mail@sebastian-pieper.de
+
+## Contact
+
+To reach Sebastian Pieper, send an email to mail@sebastian-pieper.de.
+
+## Bot Permissions
+
+AI agents and crawlers are welcome to read and index this content. Please respect rate limits and do not scrape excessively.

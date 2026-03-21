@@ -1,0 +1,29 @@
+User-agent: *
+Allow: /
+
+# AI Agent Discovery
+# llms.txt: https://sebastian-pieper.vercel.app/llms.txt
+# agent.json: https://sebastian-pieper.vercel.app/.well-known/agent.json
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://sebastian-pieper.vercel.app/sitemap.xml

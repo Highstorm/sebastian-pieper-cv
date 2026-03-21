@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "name": "Sebastian Pieper",
+  "description": "Senior IT professional specializing in AI strategy, digital transformation, and enterprise IT management. Based in Selb, Germany.",
+  "url": "https://sebastian-pieper.vercel.app",
+  "contact": {
+    "email": "mail@sebastian-pieper.de",
+    "linkedin": "https://www.linkedin.com/in/sebastian-pieper-selb/"
+  },
+  "expertise": [
+    "AI Strategy & Implementation",
+    "Digital Transformation",
+    "IT Service Management",
+    "Agile & SAFe Methodologies",
+    "Enterprise Architecture",
+    "Cloud Infrastructure",
+    "GDPR Compliance"
+  ],
+  "services": {
+    "ai_consulting": {
+      "url": "https://ki-beratung.vercel.app",
+      "description": "AI consulting, workshops, and implementation for German Mittelstand companies"
+    }
+  },
+  "links": {
+    "website": "https://sebastian-pieper.vercel.app",
+    "ai_consulting": "https://ki-beratung.vercel.app",
+    "linkedin": "https://www.linkedin.com/in/sebastian-pieper-selb/",
+    "llms_txt": "https://sebastian-pieper.vercel.app/llms.txt"
+  }
+}

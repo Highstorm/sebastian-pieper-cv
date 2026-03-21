@@ -26,6 +26,44 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Sebastian Pieper",
+  url: "https://sebastian-pieper.vercel.app",
+  jobTitle: "Head of IT",
+  worksFor: {
+    "@type": "Organization",
+    name: "RAPA Automotive",
+  },
+  description:
+    "Senior IT professional specializing in AI strategy, digital transformation, and enterprise IT management.",
+  email: "mail@sebastian-pieper.de",
+  sameAs: [
+    "https://www.linkedin.com/in/sebastian-pieper-selb/",
+    "https://ki-beratung.vercel.app",
+  ],
+  knowsAbout: [
+    "Artificial Intelligence",
+    "Digital Transformation",
+    "IT Strategy",
+    "Agile Methodologies",
+    "SAFe",
+    "ITIL",
+    "Cloud Infrastructure",
+    "Enterprise Architecture",
+  ],
+  alumniOf: {
+    "@type": "EducationalOrganization",
+    name: "Hochschule Hof",
+  },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Selb",
+    addressCountry: "DE",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -33,6 +71,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className={`${montserrat.variable} ${roboto.variable} antialiased`}>
         {children}
       </body>
