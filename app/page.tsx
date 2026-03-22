@@ -14,6 +14,7 @@ import {
   Globe,
   Linkedin,
 } from "lucide-react";
+import { ContactForm } from "./components/ContactForm";
 
 function Navbar() {
   return (
@@ -520,8 +521,6 @@ function Education() {
     </section>
   );
 }
-
-import { ContactForm } from "./components/ContactForm";
 
 function Contact() {
   return (
