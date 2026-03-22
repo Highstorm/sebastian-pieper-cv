@@ -51,11 +51,11 @@ Head of IT at RAPA Automotive — leading IT strategy, digital transformation in
 - Website: https://sebastian-pieper.vercel.app
 - AI Consulting: https://ki-beratung.vercel.app
 - LinkedIn: https://www.linkedin.com/in/sebastian-pieper-selb/
-- Email: mail@sebastian-pieper.de
+- Kontaktformular: https://sebastian-pieper.vercel.app/#contact
 
 ## Contact
 
-To reach Sebastian Pieper, send an email to mail@sebastian-pieper.de.
+To reach Sebastian Pieper, use the contact form at https://sebastian-pieper.vercel.app/#contact.
 
 ## Bot Permissions
 

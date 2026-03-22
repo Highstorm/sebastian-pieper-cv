@@ -9,7 +9,6 @@ import {
   Target,
   BarChart3,
   FileText,
-  Mail,
   MapPin,
   ChevronRight,
   Globe,
@@ -522,35 +521,35 @@ function Education() {
   );
 }
 
+import { ContactForm } from "./components/ContactForm";
+
 function Contact() {
   return (
     <section id="contact" className="py-24 bg-light2">
-      <div className="mx-auto max-w-[1200px] px-6 text-center">
+      <div className="mx-auto max-w-[800px] px-6 text-center">
         <SectionLabel>KONTAKT</SectionLabel>
         <SectionTitle>Let&apos;s connect</SectionTitle>
         <Divider />
         <p className="font-body text-base font-light leading-[1.6] text-text mt-6 mb-10 max-w-lg mx-auto">
           Interesse an einer Zusammenarbeit oder einem Austausch? Ich freue mich über Ihre Nachricht.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <a
-            href="mailto:seb@stianpieper.de"
-            className="flex items-center gap-3 bg-card-bg border border-accent-border rounded-[20px] px-8 py-5 hover:bg-[rgba(15,23,42,0.06)] hover:border-accent-border2 hover:-translate-y-0.5 transition-all duration-300"
-          >
-            <Mail className="w-5 h-5 text-accent2" strokeWidth={1.5} />
-            <span className="font-body text-sm text-black font-medium">seb@stianpieper.de</span>
-          </a>
+        <div className="bg-card-bg border border-accent-border rounded-[20px] p-8">
+          <ContactForm
+            reasons={["Zusammenarbeit", "Austausch", "Jobangebot", "Sonstiges"]}
+          />
+        </div>
+        <div className="flex items-center justify-center gap-6 mt-8">
           <a
             href="https://www.linkedin.com/in/sebastian-pieper-selb/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-3 bg-card-bg border border-accent-border rounded-[20px] px-8 py-5 hover:bg-[rgba(15,23,42,0.06)] hover:border-accent-border2 hover:-translate-y-0.5 transition-all duration-300"
+            className="flex items-center gap-2 text-text2 hover:text-black transition-colors"
           >
-            <Linkedin className="w-5 h-5 text-accent2" strokeWidth={1.5} />
-            <span className="font-body text-sm text-black font-medium">LinkedIn</span>
+            <Linkedin className="w-4 h-4" strokeWidth={1.5} />
+            <span className="font-body text-sm">LinkedIn</span>
           </a>
         </div>
-        <div className="flex items-center justify-center gap-2 mt-6 text-text3">
+        <div className="flex items-center justify-center gap-2 mt-4 text-text3">
           <MapPin className="w-4 h-4" strokeWidth={1.5} />
           <span className="font-body text-sm">Selb, Bayern</span>
         </div>

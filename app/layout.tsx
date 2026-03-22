@@ -38,7 +38,7 @@ const jsonLd = {
   },
   description:
     "Senior IT professional specializing in AI strategy, digital transformation, and enterprise IT management.",
-  email: "mail@sebastian-pieper.de",
+  email: "seb@stianpieper.de",
   sameAs: [
     "https://www.linkedin.com/in/sebastian-pieper-selb/",
     "https://ki-beratung.vercel.app",
